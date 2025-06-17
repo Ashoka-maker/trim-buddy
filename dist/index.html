@@ -1,0 +1,52 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Trim Buddy - Home Haircut Booking</title>
+  <style>
+    body { font-family: Arial, sans-serif; text-align: center; padding: 2rem; background: #f9f9f9; margin: 0; }
+    h1 { color: #2e3a59; }
+    .services, .contact { margin-top: 2rem; max-width: 600px; margin-left: auto; margin-right: auto; text-align: left; }
+    .service-item { background: white; padding: 1rem; margin: 0.5rem 0; border-radius: 8px; box-shadow: 0 2px 5px rgba(0,0,0,0.1); }
+    #book { background: #28a745; color: white; border: none; padding: 1rem 2rem; font-size: 1.1rem; border-radius: 5px; cursor: pointer; margin: 2rem 0; display: inline-block; }
+    #book:hover { background: #218838; }
+    form { background: white; padding: 1rem; border-radius: 8px; box-shadow: 0 2px 5px rgba(0,0,0,0.1); margin-top: 2rem; }
+    input, textarea { width: 100%; padding: 0.75rem; margin: 0.5rem 0; border-radius: 5px; border: 1px solid #ccc; font-size: 1rem; }
+    button[type="submit"] { background: #007bff; color: white; padding: 0.75rem 1.5rem; border: none; border-radius: 5px; cursor: pointer; }
+    button[type="submit"]:hover { background: #0056b3; }
+    iframe { width: 100%; border: none; border-radius: 10px; margin-top: 2rem; height: 300px; }
+    footer { margin-top: 3rem; padding: 1rem; background: #2e3a59; color: white; }
+  </style>
+</head>
+<body>
+  <h1>Welcome to Trim Buddy 💈</h1>
+  <p>Your doorstep grooming service for men in Hyderabad</p>
+  <div class="services">
+    <h2>Our Services</h2>
+    <div class="service-item">✂️ Haircut – ₹150</div>
+    <div class="service-item">🧔 Beard Trim – ₹80</div>
+    <div class="service-item">💇 Haircut + Beard Combo – ₹200</div>
+    <div class="service-item">🏡 Home Visit Charge – ₹50</div>
+  </div>
+  <button id="book">Book on WhatsApp</button>
+  <div class="contact">
+    <h2>Contact Us</h2>
+    <form name="contact" method="POST" data-netlify="true" action="/form-success">
+      <input type="hidden" name="form-name" value="contact" />
+      <input type="text" name="name" placeholder="Your Name" required />
+      <input type="email" name="email" placeholder="Your Email" required />
+      <textarea name="message" rows="4" placeholder="Your Message" required></textarea>
+      <button type="submit">Send Message</button>
+    </form>
+  </div>
+  <iframe src="https://www.google.com/maps?q=Himayat%20Nagar%20near%20NTR%20ground%20signal%20domalguda%20Hyderabad%20500029&output=embed" allowfullscreen></iframe>
+  <footer>
+    <p>Call us on WhatsApp: <a href="https://wa.me/919663427720" style="color:white;">+91 96634 27720</a></p>
+    <p>Email: <a href="mailto:ashoka6031@gmail.com" style="color:white;">ashoka6031@gmail.com</a></p>
+    <p>© 2025 Trim Buddy. All rights reserved.</p>
+  </footer>
+  <script src="main.js" type="module"></script>
+</body>
+</html>
